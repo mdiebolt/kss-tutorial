@@ -1,0 +1,10 @@
+#!/bin/bash
+
+bundle exec middleman build --clean
+
+npm install
+npm run doc
+cp build/stylesheets/site.css styleguide/public/site.css
+
+# push the folder `styleguide` to repo's gh-pages branch
+git subtree push --prefix styleguide origin gh-pages
