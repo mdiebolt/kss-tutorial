@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Step by step walkthrough for using KSS npm module to create a styleguide for a Middleman site",
   "main": "index.js",
-  "scripts": {
-    "doc": "kss-node --css=public/site.css --template=source/styleguide_template source/stylesheets ./styleguide"
-  },
   "author": "Matt Diebolt",
   "license": "ISC",
   "devDependencies": {

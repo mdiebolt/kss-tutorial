@@ -1,0 +1,4 @@
+{
+  "css": ["public/site.css"],
+  "template": "source/styleguide_template"
+}
