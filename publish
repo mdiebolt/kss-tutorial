@@ -3,7 +3,12 @@
 bundle exec middleman build --clean
 
 npm install
-./node_modules/.bin/kss-node --config kss-config.json source/stylesheets styleguide
+
+./node_modules/.bin/kss-node \
+  --css public/site.css \
+  --template source/styleguide_template \
+  source/stylesheets styleguide
+
 cp build/stylesheets/site.css styleguide/public/site.css
 
 # push the folder `styleguide` to repo's gh-pages branch
